@@ -1,0 +1,11 @@
+C:\Users\ildar\source\repos\DriverMatching\DriverMatching.Core\bin\Release\net7.0\DriverMatching.core.deps.json
+C:\Users\ildar\source\repos\DriverMatching\DriverMatching.Core\bin\Release\net7.0\DriverMatching.core.dll
+C:\Users\ildar\source\repos\DriverMatching\DriverMatching.Core\bin\Release\net7.0\DriverMatching.core.pdb
+C:\Users\ildar\source\repos\DriverMatching\DriverMatching.Core\obj\Release\net7.0\DriverMatching.core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ildar\source\repos\DriverMatching\DriverMatching.Core\obj\Release\net7.0\DriverMatching.core.AssemblyInfoInputs.cache
+C:\Users\ildar\source\repos\DriverMatching\DriverMatching.Core\obj\Release\net7.0\DriverMatching.core.AssemblyInfo.cs
+C:\Users\ildar\source\repos\DriverMatching\DriverMatching.Core\obj\Release\net7.0\DriverMatching.core.csproj.CoreCompileInputs.cache
+C:\Users\ildar\source\repos\DriverMatching\DriverMatching.Core\obj\Release\net7.0\DriverMatching.core.dll
+C:\Users\ildar\source\repos\DriverMatching\DriverMatching.Core\obj\Release\net7.0\refint\DriverMatching.core.dll
+C:\Users\ildar\source\repos\DriverMatching\DriverMatching.Core\obj\Release\net7.0\DriverMatching.core.pdb
+C:\Users\ildar\source\repos\DriverMatching\DriverMatching.Core\obj\Release\net7.0\ref\DriverMatching.core.dll

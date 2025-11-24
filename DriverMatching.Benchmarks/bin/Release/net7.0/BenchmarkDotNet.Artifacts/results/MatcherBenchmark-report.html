@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>MatcherBenchmark-20251124-193758</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet v0.15.6, Windows 10 (10.0.19045.6456/22H2/2022Update)
+AMD Ryzen 7 4700U with Radeon Graphics 2.00GHz, 1 CPU, 8 logical and 8 physical cores
+.NET SDK 8.0.416
+  [Host]     : .NET 7.0.13 (7.0.13, 7.0.1323.51816), X64 RyuJIT x86-64-v3 [AttachedDebugger]
+  DefaultJob : .NET 7.0.13 (7.0.13, 7.0.1323.51816), X64 RyuJIT x86-64-v3
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>Method</th><th>DriverCount</th><th>Mean    </th><th>Error   </th><th>StdDev  </th><th>Rank</th><th>Gen0</th><th>Gen1</th><th>Gen2</th><th>Allocated</th>
+</tr>
+</thead><tbody><tr><td>BruteForce</td><td>100</td><td>4.366 &mu;s</td><td>0.0319 &mu;s</td><td>0.0266 &mu;s</td><td>1</td><td>6.0349</td><td>-</td><td>-</td><td>12.34 KB</td>
+</tr><tr><td>KDTree</td><td>100</td><td>105.696 &mu;s</td><td>0.8883 &mu;s</td><td>0.7874 &mu;s</td><td>5</td><td>28.1982</td><td>-</td><td>-</td><td>57.65 KB</td>
+</tr><tr><td>GridBucket</td><td>100</td><td>14.587 &mu;s</td><td>0.0579 &mu;s</td><td>0.0541 &mu;s</td><td>2</td><td>11.7950</td><td>-</td><td>-</td><td>24.11 KB</td>
+</tr><tr><td>BruteForce</td><td>1000</td><td>45.809 &mu;s</td><td>0.5574 &mu;s</td><td>0.6195 &mu;s</td><td>3</td><td>58.2886</td><td>-</td><td>-</td><td>119.79 KB</td>
+</tr><tr><td>KDTree</td><td>1000</td><td>7,377.425 &mu;s</td><td>83.5120 &mu;s</td><td>69.7363 &mu;s</td><td>8</td><td>273.4375</td><td>7.8125</td><td>-</td><td>582.19 KB</td>
+</tr><tr><td>GridBucket</td><td>1000</td><td>94.286 &mu;s</td><td>0.3865 &mu;s</td><td>0.3227 &mu;s</td><td>4</td><td>68.8477</td><td>-</td><td>-</td><td>141.73 KB</td>
+</tr><tr><td>BruteForce</td><td>10000</td><td>793.417 &mu;s</td><td>3.6818 &mu;s</td><td>3.4439 &mu;s</td><td>6</td><td>221.6797</td><td>221.6797</td><td>221.6797</td><td>1115.75 KB</td>
+</tr><tr><td>KDTree</td><td>10000</td><td>681,142.269 &mu;s</td><td>13,588.7127 &mu;s</td><td>35,559.2954 &mu;s</td><td>9</td><td>-</td><td>-</td><td>-</td><td>6230.06 KB</td>
+</tr><tr><td>GridBucket</td><td>10000</td><td>1,230.451 &mu;s</td><td>7.7061 &mu;s</td><td>6.8313 &mu;s</td><td>7</td><td>220.7031</td><td>220.7031</td><td>220.7031</td><td>1147.19 KB</td>
+</tr></tbody></table>
+</body>
+</html>
